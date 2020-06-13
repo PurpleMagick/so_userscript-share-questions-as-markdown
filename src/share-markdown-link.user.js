@@ -3,7 +3,7 @@
 // @namespace		https://github.com/PurpleMagick/
 // @description		Adds a share button that produces markdown links. The user ID is trimmed from that link.
 // @author			VLAZ
-// @version			1.0.2
+// @version			1.0.3
 //
 // @include			/^https:\/\/(?:meta\.)?stackoverflow\.com\/questions\/\d+\/.*$/
 // @include			/^https:\/\/(?:meta\.)?serverfault\.com\/questions\/\d+\/.*$/
@@ -12,6 +12,11 @@
 // @include			/^https:\/\/(?:meta\.)?mathoverflow\.net\/questions\/\d+\/.*$/
 // @include			/^https:\/\/(?:meta\.)?stackapps\.com\/questions\/\d+\/.*$/
 // @include			/^https:\/\/(?:[^\/.]+\.)(?:meta\.)?stackexchange\.com\/questions\/\d+\/.*$/
+//
+// @exclude			https://chat.stackexchange.com
+// @exclude			https://chat.meta.stackexchange.com
+// @exclude			https://api.stackexchange.com
+// @exclude			https://data.stackexchange.com
 //
 // @grant			none
 // ==/UserScript==
