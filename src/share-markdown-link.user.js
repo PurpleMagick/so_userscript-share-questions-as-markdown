@@ -1,10 +1,18 @@
 // ==UserScript==
-// @name			Share anonymous markdown links
+// @name			Stack Exchange - share anonymous markdown links
 // @namespace		https://github.com/PurpleMagick/
-// @descriptionAdds a share button that produces markdown links. The user ID is trimmed from that link.
-// @author			PurpleMagick
-// @version			1.0.1
-// @include			https://stackoverflow.com/questions/*
+// @description		Adds a share button that produces markdown links. The user ID is trimmed from that link.
+// @author			VLAZ
+// @version			1.0.2
+//
+// @include			/^https:\/\/(?:meta\.)?stackoverflow\.com\/questions\/\d+\/.*$/
+// @include			/^https:\/\/(?:meta\.)?serverfault\.com\/questions\/\d+\/.*$/
+// @include			/^https:\/\/(?:meta\.)?superuser\.com\/questions\/\d+\/.*$/
+// @include			/^https:\/\/(?:meta\.)?askubuntu\.com\/questions\/\d+\/.*$/
+// @include			/^https:\/\/(?:meta\.)?mathoverflow\.net\/questions\/\d+\/.*$/
+// @include			/^https:\/\/(?:meta\.)?stackapps\.com\/questions\/\d+\/.*$/
+// @include			/^https:\/\/(?:[^\/.]+\.)(?:meta\.)?stackexchange\.com\/questions\/\d+\/.*$/
+//
 // @grant			none
 // ==/UserScript==
 
