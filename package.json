@@ -1,0 +1,22 @@
+{
+  "name": "so_userscript-share-questions-as-markdown",
+  "version": "1.0.0",
+  "description": "A userscript to allow directly sharing a question as a markdown link.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PurpleMagick/so_userscript-share-questions-as-markdown.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PurpleMagick/so_userscript-share-questions-as-markdown/issues"
+  },
+  "homepage": "https://github.com/PurpleMagick/so_userscript-share-questions-as-markdown#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0"
+  }
+}
