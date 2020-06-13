@@ -3,8 +3,8 @@
 // @namespace		https://github.com/PurpleMagick/
 // @descriptionAdds a share button that produces markdown links. The user ID is trimmed from that link.
 // @author			PurpleMagick
-// @version			1
-// @include			https://stackoverflow.com/question/*
+// @version			1.0.1
+// @include			https://stackoverflow.com/questions/*
 // @grant			none
 // ==/UserScript==
 
@@ -47,7 +47,6 @@ const formatMarkdown = (title, link)	=>
 
 const createMarkdown = () =>
 	formatMarkdown(retrieveFormattedTitle(), retrieveFormattedLink());
-
 
 
 const createLink = text => {
