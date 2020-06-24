@@ -3,7 +3,7 @@
 // @namespace		https://github.com/PurpleMagick/
 // @description		Adds a share button that produces markdown links. The user ID is trimmed from that link.
 // @author			VLAZ
-// @version			1.0.3
+// @version			1.0.4
 //
 // @include			/^https:\/\/(?:meta\.)?stackoverflow\.com\/questions\/\d+\/.*$/
 // @include			/^https:\/\/(?:meta\.)?serverfault\.com\/questions\/\d+\/.*$/
@@ -24,16 +24,16 @@
 const compose = (f,...fs) => x =>
 	f === undefined ? x : compose(...fs)(f(x));
 
-const escapeRegex = str =>
+const escapeSquareBrackets = str =>
 	str
-		.replace("[", "\\[")
-		.replace("]", "\\]");
+		.replace(/\[/g, "\\[")
+		.replace(/\]/g, "\\]");
 
 const titleWordsFilter = [
 	"[duplicate]",
 	"[closed]"
 ]
-	.map(escapeRegex)
+	.map(escapeSquareBrackets)
 	.join("|");
 
 
@@ -51,7 +51,7 @@ const formatLink = link =>
 	link.slice(0, link.lastIndexOf("/"));
 
 
-const retrieveFormattedTitle = compose(retrieveTitle, formatTitle);
+const retrieveFormattedTitle = compose(retrieveTitle, formatTitle, escapeSquareBrackets);
 const retrieveFormattedLink = compose(retrieveLink, formatLink);
 
 
