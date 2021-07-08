@@ -3,7 +3,7 @@
 // @namespace		https://github.com/PurpleMagick/
 // @description		Adds a share button that produces markdown links. The user ID is trimmed from that link.
 // @author			VLAZ
-// @version			1.1.0
+// @version			1.2.0
 //
 // @include			/^https:\/\/(?:meta\.)?stackoverflow\.com\/questions\/\d+\/.*$/
 // @include			/^https:\/\/(?:meta\.)?serverfault\.com\/questions\/\d+\/.*$/
@@ -80,7 +80,7 @@ const createLink = text => {
 };
 
 const addLink = el =>
-	document.querySelector(".js-post-menu .grid").appendChild(el);
+	document.querySelector(".js-post-menu .s-anchors").appendChild(el);
 
 const run = compose(createMarkdown, createLink, addLink);
 
